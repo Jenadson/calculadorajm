@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <title>Contador JM</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contador</h1>
+        <h2>de caixas é linhas</h2>
+        <div class="cxl">
+            <div >
+                
+                <input id="mybox" type="number" placeholder="Caixas">
+                <input id="myline" type="number"  placeholder="Linhas">
+            </div>
+            
+        </div>
+        <div class="time">
+            <h2>Tempo em horas trabalhadas</h2>
+            <input id="time" type="number" min="0" max="12" >
+        </div>
+        <div>
+            <button onclick="calculate()">Calcular</button>
+        </div>
+        <h2>Caixas/Linhas hora</h2>
+        <div id="result">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
