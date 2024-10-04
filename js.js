@@ -24,7 +24,7 @@ function calculate(){
     else if (parseInt(boxline) < 120) {
         document.getElementById("scale").innerText ="Nota 2 (106% - 120%)"
     }
-    else if (parseInt(boxline) < 200) {
+    else {
         document.getElementById("scale").innerText ="Nota 1 (121% - 140%)"
     }
     
