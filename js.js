@@ -8,7 +8,7 @@ let time = document.getElementById("time");
 function calculate(){
     
 
-    let boxline = ((box.value*0.33)+(line.value*0.66))/time.value;
+    let boxline = ((box.value*0.34)+(line.value*0.67))/time.value;
 
     document.getElementById("result").innerText =parseInt(boxline);
 
