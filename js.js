@@ -10,7 +10,7 @@ function calculate(){
 
     let boxline = ((box.value*0.33)+(line.value*0.66))/time.value;
 
-    document.getElementById("result").innerText =boxline;
+    document.getElementById("result").innerText =parseInt(boxline);
 
     if (parseInt(boxline) < 60 ) {
         document.getElementById("scale").innerText ="Nota 5 (0% - 60%)"
