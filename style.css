@@ -50,6 +50,11 @@ label{
     font-size: 3rem;
     font-weight: bold;
 }
+#scale{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 button{
     border: none;
