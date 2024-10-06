@@ -12,24 +12,53 @@
     <div class="container">
         <h1>Contador</h1>
         <h2>de caixas é linhas</h2>
-        <div class="cxl">
-            <div >
-                
-                <input id="mybox" type="number" placeholder="Caixas">
-                <input id="myline" type="number"  placeholder="Linhas">
+        <div id="incontainer">
+            <div id="execut">
+                <h3>EXECUÇÃO</h3>
+                <div class="cxl">
+                    <div >
+                        
+                        <input id="mybox" type="number" placeholder="Caixas" >
+                        <input id="myline" type="number"  placeholder="Linhas">
+                    </div>
+            
+                </div>
+                <div class="time">
+                    
+                    <input id="time" type="number" min="0" max="12" placeholder="Horas">
+                </div>
+                <div>
+                    <button onclick="calculate()">Calcular</button>
+                </div>
             </div>
             
+            <div id="jit">
+                <h3>JIT</h3>
+                <div class="cxl">
+                    <div >
+                        
+                        <input id="myboxjit" type="number" placeholder="Caixas">
+                        <input id="mylinejit" type="number"  placeholder="Linhas">
+                    </div>
+            
+                </div>
+                <div class="timejit">
+                    
+                    <input id="timejit" type="number" min="0" max="12" placeholder="Horas">
+                </div>
+                <div>
+                    <button onclick="jit()">Calcular</button>
+                </div>
+            </div>
         </div>
-        <div class="time">
-            <h2>Tempo em horas trabalhadas</h2>
-            <input id="time" type="number" min="0" max="12" >
-        </div>
-        <div>
-            <button onclick="calculate()">Calcular</button>
-        </div>
+
+        <button id="ej">EXECUÇÃO / JIT</button>
+        
         <h2>Caixas/Linhas hora</h2>
         <div id="result"></div>
+     
         <div id="scale"></div>
+        
     </div>
     
 </body>
