@@ -10,6 +10,7 @@ html, body {
 body{
     background-color: #bdc3c7;
     text-align: center;
+    overflow: hidden;
 }
 .container{
     width:380px;
