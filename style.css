@@ -2,15 +2,24 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
 body{
     background-color: #bdc3c7;
     text-align: center;
 }
 .container{
-    width: 300px;
-    margin: 50px;
+    width: 450px;
     text-align: center;
 
+}
+
+#incontainer{
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -19,30 +28,34 @@ h1{
 }
 h2{
     margin-bottom: 15px;
+    font-size: 18px;
 }
 .box{
     margin-bottom: 15px;
     
 }
-.time{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
+
 label{
     font-weight: bold;
     font-size: 1.5rem;
 
 }
 
-#mybox, #myline, #time {
+#mybox, #myline, #time, #myboxjit, #mylinejit, #timejit {
 
     border: none;
+    width: 80px;
     height: 30px;
     border-radius: 5px;
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
+    box-sizing: border-box;
 
+}
+
+#execut, #jit{
+    padding: 8px;
 }
 
 #result{
@@ -50,6 +63,7 @@ label{
     font-size: 3rem;
     font-weight: bold;
 }
+
 #scale{
     margin-top: 10px;
     font-size: 1.5rem;
@@ -65,4 +79,14 @@ button{
     font-weight: bold;
     background-color: rgb(169, 253, 232);
     margin-bottom: 30px;
+}
+#ej{
+    width: 150px;
+}
+
+
+input[tipe="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
