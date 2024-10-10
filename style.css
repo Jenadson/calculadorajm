@@ -65,10 +65,11 @@ label{
     font-weight: bold;
 }
 
-#scale{
+#scale, #porcent{
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    
 }
 
 button{
