@@ -11,21 +11,24 @@ let timeJit = document.getElementById("timejit");
 function calculate(){
     
 
-    let boxlinetime = ((box.value*0.34)+(line.value*0.67))/time.value;
+    let boxlinetime = (((box.value*0.34)+(line.value*0.67))*1.08)/time.value;
 
     boxline =parseInt(boxlinetime)
     document.getElementById("result").innerText =boxline;
 
-    if (boxline < 60 ) {
+    porcentbox = Number.parseInt((boxline/135)*100);
+    document.getElementById("porcent").innerText =porcentbox;
+
+    if (porcentbox <= 60 ) {
         document.getElementById("scale").innerText ="Nota 5 (0% - 60%)"
     }
-    else if (boxline < 89){
+    else if (porcentbox <= 89){
         document.getElementById("scale").innerText ="Nota 4 (61% - 89%)"
     }
-    else if (boxline < 105) {
+    else if (porcentbox <= 105) {
         document.getElementById("scale").innerText ="Nota 3 (90% - 105%)"
     }
-    else if (boxline < 120) {
+    else if (porcentbox <= 120) {
         document.getElementById("scale").innerText ="Nota 2 (106% - 120%)"
     }
     else {
